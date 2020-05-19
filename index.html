@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>RGB Change</title>
+  </head>
+
+  <body>
+    <div id="main">
+      <div id="color">
+        <p>Escolha sua cor:</p>
+        <div>
+          <span class="name" id="red">Vermelho (R): </span>
+          <input type="range" id="rangeRed" value="0" max="255" />
+          <input
+            type="text"
+            class="text"
+            disabled="true"
+            value="0"
+            id="outputRed"
+          />
+        </div>
+
+        <div>
+          <span class="name" id="green">Verde (G): </span>
+          <input type="range" id="rangeGreen" value="0" max="255" />
+          <input
+            type="text"
+            class="text"
+            disabled="true"
+            value="0"
+            id="outputGreen"
+          />
+        </div>
+
+        <div>
+          <span class="name" id="blue">Azul (B):</span>
+          <input type="range" id="rangeBlue" value="0" max="255" />
+          <input
+            type="text"
+            class="text"
+            disabled="true"
+            value="0"
+            id="outputBlue"
+          />
+        </div>
+      </div>
+      <div id="main_result">
+        <p>Este é o resultado:</p>
+        <span id="result"></span>
+      </div>
+    </div>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
